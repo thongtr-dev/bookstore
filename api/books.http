@@ -1,0 +1,31 @@
+### Create a new book
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "rating": 4.5
+}
+
+### Get all books
+GET http://localhost:3000/books
+
+### Get a specific book by ID
+# Replace {id} with an actual book ID after creating a book
+GET http://localhost:3000/books/1
+
+### Update a book by ID
+# Replace {id} with an actual book ID after creating a book
+PATCH http://localhost:3000/books/1
+Content-Type: application/json
+
+{
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "rating": 4.7
+}
+
+### Delete a book by ID
+# Replace {id} with an actual book ID after creating a book
+DELETE http://localhost:3000/books/2
